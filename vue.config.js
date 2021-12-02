@@ -7,5 +7,6 @@ module.exports = {
   },
   transpileDependencies: [
     'quasar'
-  ]
+  ],
+  publicPath: "/vulngame-fe/"
 }
