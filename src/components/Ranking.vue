@@ -1,8 +1,7 @@
 <template>
-<div class="my-font">
-  <div class="row">
+  <div class="row"  :style="{ backgroundImage: 'url(' + require('@/assets/bg.png') + ')' }">
     <div class="column" >
-      <div class="q-pa-md" :style="{ backgroundImage: 'url(' + require('@/assets/bg.png') + ')' }">
+      <div class="q-pa-md">
         <q-table :style="{width: '100%', margin: '15%'}"
           title="RANKING - IMAGES"
           dark
@@ -17,7 +16,7 @@
       </div>
     </div>
     <div class="column">
-      <div class="q-pa-md" :style="{ backgroundImage: 'url(' + require('@/assets/bg.png') + ')' }">
+      <div class="q-pa-md">
         <q-table :style="{width: '100%', margin: '15%'}"
           title="RANKING - USERS"
           dark
@@ -32,7 +31,6 @@
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -102,6 +100,10 @@ export default{
 
 <style>
 
+.row{
+  background-attachment: fixed;
+  background-position: center;
+}
 
 .q-pa-md{
   padding: 0px 0px;
